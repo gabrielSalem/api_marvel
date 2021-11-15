@@ -11,7 +11,7 @@ const Search = ({ search }) =>{
             <form >
                 <input type="text" 
                        className="form-control"
-                       placeholder="Procure um personagem"
+                       placeholder="Procure o que precisa :)"
                        autoFocus
                        onChange={(e)=>onSearch(e.target.value)}
                        value={text}/>
