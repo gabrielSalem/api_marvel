@@ -12,3 +12,4 @@
 ### Enviar Quadrinhos
 - [ ] Crie a funcionalidade de "Envie-me" todos os quadrinhos selecionados. O usuário precisa selecionar o local de envio no mapa.
 
+<!-- https://gabrielsalem.github.io/api_marvel/ -->
