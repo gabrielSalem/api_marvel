@@ -1,15 +1,11 @@
 import React from 'react'
 
 const CharacterItem = ({item}) => {
+    
     return (
         <div className="card">
-            <img src={item.thumbnail.path+"/portrait_fantastic.jpg"} alt='' />
+            <img src={item.thumbnail.path+"/portrait_fantastic."+item.thumbnail.extension} alt={item.title} />
             <p>{item.title.substring(0,20)+"..."}</p>
-            
-            <div>
-                <a href={"#"+item.id} classClass="buttonAdd" itemID={item.id}></a>
-                <a href={"#"+item.id} classClass="buttonDetails" itemID={item.id}></a>
-            </div>
         </div>
     )
 }
