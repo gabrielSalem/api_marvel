@@ -1,12 +1,11 @@
 * {
   padding: 0;margin: 0;
   overflow-x: hidden;
-
 }
 body{
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fde%2Ff4%2F73%2Fdef473f3b4380d977d23ac2502cb1d77.jpg&f=1&nofb=1");
   background-size: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .App {
   width: 100vw;
@@ -31,6 +30,7 @@ input[type="text"] {
   border-radius: 1rem;
   border: 3px solid transparent;
   background: #282c34be;
+  font-size: 18px;
   color: #fff;
   outline: 0;
   transition: ease-in 300ms;
@@ -44,11 +44,9 @@ article {
   min-height: 60vh;
   margin: 2rem 0;
 
-
   display: grid;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-  
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
 }
 @media only screen and (min-width: 300px) {
   article {
@@ -80,17 +78,15 @@ article {
 div.loading {
   width: 15vw;
   height: 15vw;
+  position: absolute;
+  top:35vh;left:40vw;
   border-radius: 20vw;
   border: solid 1rem #da0e0e;
   border-left: solid 1rem #8f0404;
 
-  animation: spin 800ms;
+  animation: spin 550ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
-@keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
 }
 
 /* Results Search */
@@ -109,31 +105,65 @@ div.card:hover {
   background: #da0e0ea1;
   cursor: pointer;
 }
-div.card p.title {
+div.card p.titleComic {
   width: 100%;
   margin-top: 1rem;
+  font-size: 16px;
   text-align: center;
 }
 
+/* --- Buttons --- */
+div.buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 24%;
+  grid-template-rows: 1;
+  align-items: center;
+  justify-items: baseline;
+}
+a.buttonModal {
+  border: none;
+  background: #da0e0ea1;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+}
+div.buttons img {
+  border-radius: 0.2rem;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  padding: 0.3rem;
+  transition: 300ms ease-in;
+}
+div.buttons img:hover {
+  background: #282c34
+}
+
 /* --- Modal --- */
-.overlay {
+.modal, .overlay {
   width: 100vw;
   height: 100vh;
   top:0;left:0;bottom:0;right:0;
   position: fixed;  
 }
+.overlay {
+  background: rgba(0,0,0,0.6);
+  filter:blur(60px);
+    -o-filter:blur(60px);
+    -ms-filter:blur(60px);
+    -moz-filter:blur(60px);
+    -webkit-filter:blur(60px);
+}
 
 .modal { 
-  width: 100vw;
-  height: 100vh;
-  top:0;left:0;bottom:0;right:0;
-  position: fixed;  
-  animation: move 400ms;
+  animation: moveDown 400ms;
   animation-delay: 250ms;
   animation-fill-mode: backwards;
   border-radius: 1rem;
 }
-
 .modal-content {
   position: absolute;
   top: 50%;left:50%;
@@ -145,14 +175,6 @@ div.card p.title {
   max-width:80vw;
   min-width: 50vw;
   text-align: center;;
-}
-.overlay {
-    background: rgba(0,0,0,0.6);
-    filter:blur(60px);
-    -o-filter:blur(60px);
-    -ms-filter:blur(60px);
-    -moz-filter:blur(60px);
-    -webkit-filter:blur(60px);
 }
 .closeModal {
   width: 2.5rem;
@@ -168,18 +190,16 @@ div.card p.title {
   border-radius: 1rem;
   color: #282c34;
 }
-body.active-modal {
-  overflow-y: hidden;
-}
-
+body.active-modal {overflow-y: hidden;}
 h3.titleModal {
-  width: 45vw;
+  width: 100%;
   margin: 0rem 0 1.5rem 0rem;
   color: white;
 }
 .modal-content img.imgModal {
   min-width: 15vw;
   border-radius: 0.5rem;;
+  box-shadow: 3px 3px 12px 6px #222;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -188,17 +208,9 @@ p.descriptionModal {
   text-align: justify;
   margin: 0 auto;
 }
-a.buttonModal {
-  border: none;
-  background: #da0e0ea1;
-  color: white;
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
-  border-radius: 0.5rem;
-  color: white;
-}
 
-@keyframes move {
+/* --- Animations --- */
+@keyframes moveDown {
   from {
     opacity: 0;
     transform: translateY(-35%);
@@ -207,4 +219,8 @@ a.buttonModal {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
