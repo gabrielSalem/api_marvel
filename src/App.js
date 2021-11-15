@@ -13,8 +13,8 @@ function App() {
    const[items,setItems] = useState([]);
    // eslint-disable-next-line no-unused-vars
    const[isLoading,setLoading] = useState(true);
-   const[query,setQuery] = useState("")
-
+   const[query,setQuery] = useState("");
+   
    useEffect(()=>{
       const fetch = async()=>{
          if(query === ''){
@@ -34,11 +34,10 @@ function App() {
    return (
     <div className="App">
       <Header></Header>
-      
       <Search search={(term)=>{setQuery(term)}}/>
       <article>
          <Characters items={items} isLoading={isLoading}/>            
-      </article>
+      </article>      
     </div>
   );
 }

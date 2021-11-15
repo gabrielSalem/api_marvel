@@ -4,7 +4,7 @@
 
 ### Os quadrinhos listados com 02 ações disponíveis ao clicar sobre eles:
 - [ ] Selecionar o quadrinho
-- [ ] Exibir detalhes do quadrinho (modal)
+- [x] Exibir detalhes do quadrinho (modal)
 
 ### Informações necessárias na lista de quadrinhos:
 - [x] Título, imagem do quadrinho e detalhes do quadrinho
@@ -12,4 +12,3 @@
 ### Enviar Quadrinhos
 - [ ] Crie a funcionalidade de "Envie-me" todos os quadrinhos selecionados. O usuário precisa selecionar o local de envio no mapa.
 
-<!-- https://gabrielsalem.github.io/api_marvel/ -->

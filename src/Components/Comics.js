@@ -1,11 +1,11 @@
 import React from 'react';
-import CharacterItem from './ComicItem';
+import ComicItem from './ComicItem';
 
-const Characters = ({ items, isLoading }) => {
+const Comics = ({ items, isLoading }) => {
     return isLoading ? 
         <div className="loading"></div> :
         items.map(item => (
-            <CharacterItem key={item.id} item={item}></CharacterItem>
+            <ComicItem key={item.id} item={item} ></ComicItem>
         ));
 }
-export default Characters;
+export default Comics;
