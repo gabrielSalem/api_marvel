@@ -1,3 +1,7 @@
+# API MARVEL 
+**Link da API:** https://developer.marvel.com
+
+## Objetivos a se alcaçar:
 
 ### Pesquisa do quadrinho 
 - [x] Deve conter um input do tipo texto e ao digitar o nome de um quadrinho filtrar o quadrinho com base na expressão digitada
