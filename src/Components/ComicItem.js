@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import axios from 'axios'
-// import fileDownload from 'https://'
 
 const ComcicItem = ({item}) => {
     

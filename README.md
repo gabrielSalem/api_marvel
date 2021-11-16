@@ -26,3 +26,9 @@
 - [x] Utilização de animações para trazer mais suavidade e um embelesamento nas transições
 - [x] Um loading ao se fazer em forma de círculo no qual só desaparecerá ao carregar todas as informações relacionadas a *quadrinhos*
 - [x] Responsividade na amostragem dos resultados aumentando ou diminuindo o número de colunas de acordo com a largura da tela do dispositivo
+
+### Códigos a se executar, dependências do projeto:
+<code>$ yarn install axios</code>
+
+**ATENÇÃO: Ainda a fazer a hospedagem do projeto**
+Projeto(https://github.com/gabrielSalem/api_marvel) zipado: 

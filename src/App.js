@@ -19,12 +19,10 @@ function App() {
       const fetch = async()=>{
          if(query === ''){
             const result = await axios(`http://gateway.marvel.com/v1/public/comics?ts=1&apikey=${publicKey}&hash=${hash}`)
-            // console.log(result.data.data.results);
             setItems(result.data.data.results);
             setLoading(false);
          }else{
             const result = await axios(`http://gateway.marvel.com/v1/public/comics?titleStartsWith=${query}&ts=1&apikey=${publicKey}&hash=${hash}`)
-            // console.log(result.data.data.results);
             setItems(result.data.data.results);
             setLoading(false);
          }      
