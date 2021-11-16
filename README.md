@@ -17,4 +17,12 @@
 ### Enviar Quadrinhos
 - [ ] Crie a funcionalidade de "Envie-me" todos os quadrinhos selecionados. O usuário precisa selecionar o local de envio no mapa.
 
+#### Funcionalidade extra
+- [x] Baixar quadrinho
 
+#### Outros recursos
+- [x] Ao colocar o ponteiro do mouse sobre a imagem aparece o título do quadrinho escrito
+- [x] Ao colocar o ponteiro do mouse o título aparece a descrição do quadrinho escrito
+- [x] Utilização de animações para trazer mais suavidade e um embelesamento nas transições
+- [x] Um loading ao se fazer em forma de círculo no qual só desaparecerá ao carregar todas as informações relacionadas a *quadrinhos*
+- [x] Responsividade na amostragem dos resultados aumentando ou diminuindo o número de colunas de acordo com a largura da tela do dispositivo

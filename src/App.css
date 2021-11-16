@@ -24,7 +24,7 @@ svg {margin-top: 2rem;}
 
 /* --- Search --- */
 input[type="text"] {
-  width: 76vw;
+  width: 86vw;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -68,7 +68,7 @@ article {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   article {
     grid-template-columns: repeat(5, 1fr);
   }
