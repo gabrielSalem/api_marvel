@@ -31,4 +31,4 @@
 <code>$ yarn install axios</code>
 
 **ATENÇÃO: Ainda a fazer a hospedagem do projeto**
-Projeto(https://github.com/gabrielSalem/api_marvel)zipado: https://drive.google.com/file/d/1UG0BnW-IsHGadYWyC3wkjhUYb7gYCMiK/view?usp=sharing
+Projeto(https://github.com/gabrielSalem/api_marvel) zipado: https://drive.google.com/file/d/1UG0BnW-IsHGadYWyC3wkjhUYb7gYCMiK/view?usp=sharing
