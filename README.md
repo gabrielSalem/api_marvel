@@ -30,6 +30,17 @@
 ### Códigos a se executar, dependências do projeto:
 <code>$ yarn install axios</code>
 
+### Instalação do projeto:
+<code>
+  $ npx create-react-app api_marvel
+</code>
+<br/>
+<code>
+  $ cd api_marvel
+</code>
+
+<p>A partir daí é só colocar os arquivos do projeto, seja com um <code>\api_marvel>$ clone https://github.com/gabrielSalem/api_marvel.git</code> ou copiando de um arquivo zipado e colando no diretório recém criado(api_marvel)</p>
+
 ### Execução(Build) do projeto:
 <code>
   yarn start
@@ -37,6 +48,6 @@
   npm start
 </code>
 
-
 **ATENÇÃO: Ainda a fazer a hospedagem do projeto**
-Projeto(https://github.com/gabrielSalem/api_marvel) zipado: https://drive.google.com/file/d/1UG0BnW-IsHGadYWyC3wkjhUYb7gYCMiK/view?usp=sharing
+
+Link do projeto com o node_modules: https://drive.google.com/file/d/1OWU41mPqNBkVMBfXhyWE9-Ir4WKnV-x8/view?usp=sharing
